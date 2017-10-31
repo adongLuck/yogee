@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="yogee:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="yogee.war">
+      <element id="artifact" artifact-name="yogee:war exploded" />
+    </root>
+  </artifact>
+</component>
