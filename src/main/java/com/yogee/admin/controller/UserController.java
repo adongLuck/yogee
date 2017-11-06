@@ -1,13 +1,15 @@
-package com.yogee.controller;
+package com.yogee.admin.controller;
 
 /**
- * Created by Jackqth on 2017/10/30.
+ * UserController class
+ *
+ * @author Jackqth
+ * @date 2017/11/1
  */
 import javax.servlet.http.HttpServletRequest;
 
-import com.yogee.model.User;
-import com.yogee.service.IUserService;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.yogee.admin.model.User;
+import com.yogee.admin.service.IUserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -24,7 +26,7 @@ public class UserController {
 
     @RequestMapping("/index")
     public String selectUser(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        return "index";
+        return "/WEB-INF/admin/index";
     }
 
 }

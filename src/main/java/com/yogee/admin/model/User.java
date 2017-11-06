@@ -1,4 +1,4 @@
-package com.yogee.model;
+package com.yogee.admin.model;
 
 /**
  * Created by Jackqth on 2017/10/30.

@@ -1,11 +1,13 @@
-package com.yogee.service.impl;
-
+package com.yogee.admin.service.impl;
 /**
- * Created by Jackqth on 2017/10/30.
+ * 日志拦截器
+ *
+ * @author Jackqth
+ * @date 2017/10/30
  */
-import com.yogee.dao.IUserDao;
-import com.yogee.model.User;
-import com.yogee.service.IUserService;
+import com.yogee.admin.dao.IUserDao;
+import com.yogee.admin.model.User;
+import com.yogee.admin.service.IUserService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -16,6 +18,7 @@ public class UserServiceImpl implements IUserService {
     @Resource
     private IUserDao userDao;
 
+    @Override
     public User selectUser(long userId) {
         return this.userDao.selectUser(userId);
     }
