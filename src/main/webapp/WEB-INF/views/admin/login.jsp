@@ -37,7 +37,7 @@
   <div class="login-box-body">
     <p class="login-box-msg">登录</p>
 
-    <form action="" method="post">
+    <form action="/a/login" method="post">
       <div class="form-group has-feedback">
         <input type="text" class="form-control" placeholder="Email">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
